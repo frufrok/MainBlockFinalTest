@@ -6,7 +6,7 @@ public static class ArrayHelper
     /// <param name="array">Исходный массив строк.</param>
     /// <param name="maxChars">Максимальное количество символов в строке.</param>
     /// <returns></returns>
-    public static string[] SelectStringsShorterThan(string[] array, int maxChars = 3)
+    public static string[] SelectStringsNoLongerThan(string[] array, int maxChars = 3)
     {
         int count = array.Length;
         string[] result = new string[count];
@@ -43,7 +43,7 @@ public static class ArrayHelper
         Console.WriteLine(array.JoinString());
     }
     /// <summary>
-    /// Записывает массив строк в консоль.
+    /// Метод расширения. Записывает массив строк в консоль.
     /// </summary>
     /// <param name="array">Массив строк для записи.</param>
     /// <param name="message">Сообщение перед выводом массива.</param>
